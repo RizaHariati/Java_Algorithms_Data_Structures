@@ -1,6 +1,5 @@
 package exercise01;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class A001_Adding_Binary_Numbers {
@@ -12,12 +11,12 @@ public class A001_Adding_Binary_Numbers {
 		int a = scan.nextInt();
 		System.out.println("Input the second number : ");
 		int b = scan.nextInt();
-
+		scan.close();
 		int result[] = new int[20];
 		int index = 0;
 		int rest = 0;
 
-		while (a != 0 && b != 0) {
+		while (a != 0 || b != 0) {
 			int temp =(int) (a % 10) + (b % 10) + rest;
 			result[index++] = temp % 2;
 			rest = temp / 2;
