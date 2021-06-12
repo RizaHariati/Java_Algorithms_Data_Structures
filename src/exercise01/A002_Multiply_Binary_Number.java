@@ -1,9 +1,8 @@
 package exercise01;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class A0002_Multiply_Binary_Number {
+public class A002_Multiply_Binary_Number {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
