@@ -2,7 +2,7 @@ package exercise02;
 
 import java.util.Arrays;
 
-public class ScratchPad {
+public class A4_Sort_Two_Arrays {
 
 	public static void main(String[] args) {
 		int arr1[] = {1, 2, 3, 4, 9};
