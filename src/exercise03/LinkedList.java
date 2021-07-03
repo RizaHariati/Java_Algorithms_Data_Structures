@@ -1,6 +1,6 @@
 package exercise03;
 
-public class LinkedList {
+ class LinkedList {
 	static Node head;
 
 	static class Node {
@@ -17,10 +17,14 @@ public class LinkedList {
 	public static void main(String[] args) {
 		LinkedList list = new LinkedList();
 
-		list.head = new Node(20);
-		list.head.next = new Node(40);
-		list.head.next.next = new Node(60);
-		list.head.next.next.next = new Node(80);
+		Node a = new Node(20);
+		Node b = new Node(40);
+		Node c = new Node(60);
+		Node d = new Node(80);
+		a.next = b;
+		b.next = c;
+		c.next = d;
+		list.head =a
 		printing(head);
 		head = list.reverse(head);
 		printing(head);
