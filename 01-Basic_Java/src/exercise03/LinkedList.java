@@ -1,9 +1,9 @@
 package exercise03;
 
- class LinkedList {
-	static Node head;
+ public class LinkedList {
+	 static Node head;
 
-	static class Node {
+	 static class Node {
 		int data;
 		Node next;
 
