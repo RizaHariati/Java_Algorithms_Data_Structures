@@ -31,11 +31,39 @@ class Linked_List{
         System.out.print(node.data + " ");
         printing(node.next);
     }
-
-	public void reverse(Node root) {
-		// TODO Auto-generated method stub
+    
+    public Node reverse(Node node) {
+		if(node == null|| node.next == null) {
+			return node;
+		}
+		Node prev = reverse(node.next);
+		Node nextNode = node.next;
+		nextNode.next = node;
+		node.next = null;
+		return prev;
 		
-	}
+		
+    }
+
+//	public Node reverse(Node node) {
+//		if(node == null) {
+//			return null;
+//		}
+//		
+//		Node prev = null;
+//		Node nextNode = null;
+//		Node current = node;
+//		while(current!=null) {
+//			nextNode = current.next;
+//			current.next = prev;
+//			prev = current;
+//			current = nextNode;
+//			
+//		}
+//		return prev;
+//	}
+
+	
 
 }
 public class Reverse_Linked_Recursive {
@@ -49,7 +77,7 @@ public class Reverse_Linked_Recursive {
         root = list.insert(45, root);
         System.out.println("New Print : ");
         list.printing(root);
-        list.reverse(root);
+        root = list.reverse(root);
         list.printing(root);
 
     }
