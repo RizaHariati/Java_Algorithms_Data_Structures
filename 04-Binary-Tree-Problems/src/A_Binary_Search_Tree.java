@@ -44,7 +44,7 @@ public class A_Binary_Search_Tree {
 		tree.head.right.right = new Node(14);
 		tree.head.right.right.left = new Node(13);
 
-		int sum = tree.sumNodes(tree.head);
+//		int sum = tree.sumNodes(tree.head);
 		int difference = tree.oddEven(tree.head);
 		System.out.println(difference);
 	}
